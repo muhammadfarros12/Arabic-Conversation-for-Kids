@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutUtama"
+    android:background="@drawable/background3"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/btn_perkenalan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/btn_perkenalan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_kewarganegaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/btn_kewarganegaraan"
+        app:layout_constraintBottom_toBottomOf="@id/btn_perkenalan"
+        app:layout_constraintStart_toEndOf="@+id/btn_perkenalan"
+        app:layout_constraintTop_toTopOf="@id/btn_perkenalan" />
+
+    <ImageView
+        android:id="@+id/btn_keluarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/keluarga"
+        android:layout_marginStart="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_kewarganegaraan"
+        app:layout_constraintStart_toEndOf="@+id/btn_kewarganegaraan"
+        app:layout_constraintTop_toTopOf="@id/btn_kewarganegaraan" />
+
+    <ImageView
+            android:id="@+id/btn_kemasjid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kemasjid"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toTopOf="@id/btn_keluarga"
+            app:layout_constraintBottom_toBottomOf="@id/btn_keluarga"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_keluarga_nabi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/keluarganabi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="78dp"/>
+
+    <ImageView
+        android:id="@+id/btn_tempat_tinggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/tempattinggal"
+        app:layout_constraintBottom_toBottomOf="@id/btn_keluarga_nabi"
+        app:layout_constraintStart_toEndOf="@id/btn_keluarga_nabi"
+        app:layout_constraintTop_toTopOf="@id/btn_keluarga_nabi" />
+
+    <ImageView
+        android:id="@+id/btn_dikelas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:src="@drawable/dikelas"
+        app:layout_constraintBottom_toBottomOf="@id/btn_tempat_tinggal"
+        app:layout_constraintStart_toEndOf="@id/btn_tempat_tinggal"
+        app:layout_constraintTop_toTopOf="@id/btn_tempat_tinggal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/btn_dirumah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dirumah"
+        app:layout_constraintBottom_toBottomOf="@id/btn_dikelas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@id/btn_dikelas"
+        app:layout_constraintTop_toTopOf="@id/btn_dikelas"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

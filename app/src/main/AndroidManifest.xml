@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farroos.conversationforkids">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.farroos.conversationforkids.pilihan2"></activity>
+        <activity
+            android:name="com.farroos.conversationforkids.kewarganegaraan_pr"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.kewrganegaraan_lk"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.perkenalan_pr"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.perkenalan_lk"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.pilihan1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.LayoutUtama"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.farroos.conversationforkids.MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
